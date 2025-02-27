@@ -10,7 +10,7 @@ import java.util.List;
 public class ParcelDAO implements GenericDAO<Parcel>
 {
     private static ParcelDAO instance;
-    private EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
+    private EntityManagerFactory emf;
 
     private ParcelDAO(EntityManagerFactory emf)
     {
